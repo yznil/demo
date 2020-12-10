@@ -1,0 +1,11 @@
+{
+  "name": "demo-ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "tsc --watch"
+  }
+}
