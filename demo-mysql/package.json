@@ -1,0 +1,11 @@
+{
+  "name": "demo-mysql",
+  "scripts": {
+    "init": "node ./src/index.js init",
+    "start": "node ./src/index.js paradigms"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "mysql": "^2.18.1"
+  }
+}
