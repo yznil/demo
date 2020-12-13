@@ -14,9 +14,12 @@ const connection = mysql.createConnection({
  
 connection.connect(); // 连接数据库
 
-const [,, action] = process.argv;
+const [,, action, subAction] = process.argv;
 const paradigmDir = path.join(__dirname, action);
-const sqlFiles = fs.readdirSync(paradigmDir).filter(filename => filename.includes('.sql'));
+const sqlFiles = fs.readdirSync(paradigmDir).filter(filename => {
+  return (!subAction && filename.includes('.sql')) ||
+    (subAction && filename.includes(subAction))
+});
 
 // 自动执行各个SQL场景
 sqlFiles.forEach(filename => {
