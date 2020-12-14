@@ -1,6 +1,6 @@
-# Demo-ts
+# Demo-mysql
 
-简版 Typescirpt Demo
+简版 Mysql Demo
 
 ## Prepare
 ```sql

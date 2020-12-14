@@ -1,4 +1,4 @@
-# 组合查询：将多次查询结果合并
+-- 组合查询：将多次查询结果合并
 SELECT
   vend_id,
   prod_id,
@@ -22,7 +22,7 @@ ORDER BY
   vend_id,
   prod_price;
 
-# 与上面组合查询结果一样
+-- 与上面组合查询结果一样
 SELECT
   vend_id,
   prod_id,
